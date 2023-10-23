@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Профиль</title>
+</head>
+
+<header>
+    <a href="#">
+        <h1 class="logo">Справочник</h1>
+    </a>
+    <nav id="navigation" class="navigation">
+        <a class="btn btn1" href="#">Контакты</a>
+        <a class="btn btn2" href="#">Тест</a>
+        <a class="btn btn3" href="#">Профиль</a>
+    </nav>
+</header>
+
+<body>
+<div class="content">
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Вход</span>
+
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" class="email" placeholder="Введите почту" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" class="password1" placeholder="Введите пароль" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw1"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Я принял все условия</label>
+                        </div>
+                        
+                        <a href="#" class="text">Забыли пароль?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" name="submit" value="Войти">
+                    </div>
+                    <input type="hidden" name="act-reg" value="order-reg">
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Не зарегистрированны?
+                        <a href="#" class="text signup-link">Зарегистрируйтесь сейчас</a>
+                    </span>
+                </div>
+            </div>
+            
+
+            <div class="form signup">
+                <span class="title">Регистрация</span>
+
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="name" name="name" class="name" placeholder="Введите имя" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" class="email" placeholder="Введите почту" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" class="password1" placeholder="Придумайте пароль" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw1"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" id="password1" name="password" class="password2" placeholder="Подтвердите пароль" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw2"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Я принял все условия</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Зарегистрироваться">
+                    </div>
+                    <input type="hidden" name="act-reg" value="order-reg">
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Уже зарегистрированы?
+                        <a href="#" class="text login-link">Войти сейчас</a>
+                    </span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#" target="_blank">
+                    <img src="img/vk.svg"></a>
+            </li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://t.me/K3n4ik" target="_blank">
+                    <img src="img/telegram.svg"></a>
+            </li>
+        </ul>
+        <p>&copy;2023 Wuqly | Все права защищены</p>
+
+    </footer>
+
+</body>
+
+
+<script src="sign.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
